@@ -1,0 +1,29 @@
+footer {
+    border-top: 1px #ccc dashed;
+    color: rgb(180, 180, 180);
+    padding: 12px 0;
+    font-size: 16px;
+    text-align: center;
+    min-height: 18px;
+    line-height: 26px;
+    .wrap {
+        max-width: 1000px;
+        .left {
+            float: left;
+            @media (max-width: 680px) {
+                width: 100%;
+                text-align: left;
+            }
+        }
+        .right {
+            float: right;
+            @media (max-width: 680px) {
+                float: left;
+            }
+        }
+    }
+    a, a:hover {
+        color: rgb(180, 180, 180);
+        font-weight: bold;
+    }
+}

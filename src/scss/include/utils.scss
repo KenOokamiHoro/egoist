@@ -1,0 +1,59 @@
+// 浮层
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 2001;
+    pointer-events: none;
+    transition: background-color 0.23s;
+    &.active {
+        background-color: rgba(0, 0, 0, 0.658);
+        pointer-events: auto;
+    }
+}
+
+// 视频容器（16:9）
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+// 手机限定
+
+.mobile-only {
+    @media (min-width: 681px) {
+        display: none;
+    }
+}
+
+// clearfix
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}

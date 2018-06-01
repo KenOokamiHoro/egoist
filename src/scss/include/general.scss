@@ -1,0 +1,57 @@
+/*!
+ * Project:  tcdw2018 style
+ * Author:   tcdw <tcdw2011@gmail.com>
+ * Source:   https://github.com/tcdw/semi
+ * License:  BSD3
+ */
+
+@import "var/config";
+
+body {
+    margin: 0;
+    font-family: "lucida grande", "lucida sans unicode", "Helvetica Neue", Tahoma, "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN Normal", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", "SimSun", sans-serif;
+}
+
+pre, code {
+    font-family: Consolas, Monaco, "Courier New", Courier, monospace;
+}
+
+::selection {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+a {
+    color: darken($color: $ThemeColor, $amount: 22%);
+    text-decoration: none;
+    &:hover {
+        color: $ThemeColor;
+        text-decoration: underline;
+    }
+}
+
+.wrap, article {
+    margin: 0 auto;
+    max-width: 732px;
+    padding-left: 18px;
+    padding-right: 18px;
+    @media (max-width: 680px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    box-sizing: content-box;
+}
+
+.fa, .fab, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.fas:before {
+    font-family: FontAwesome;
+}

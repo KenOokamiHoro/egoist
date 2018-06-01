@@ -1,0 +1,98 @@
+@import "var/config";
+
+%header-icon {
+    line-height: 0;
+    a {
+        color: #000;
+        text-decoration: none;
+        transition: color 0.21s;
+        i {
+            padding: 16px 0 14px 0;
+            font-size: 23.5px;
+            width: 54px;
+        }
+        &:hover {
+            color: $ThemeColor;
+            text-decoration: none;
+        }
+    }
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.945);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2000;
+    width: 100%;
+    display: table;
+    text-align: center;
+    line-height: 54px;
+    height: 54px;
+    box-shadow: 0 0 45px 0 rgba(0, 0, 0, .12);
+    transition: background-color 0.23s, box-shadow 0.23s;
+    .wrap {
+        max-width: 1000px;
+        padding: 0;
+    }
+    ul {
+        @media (max-width: 680px) {
+            display: none;
+        }
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        float: left;
+        li {
+            float: left;
+            a {
+                display: block;
+                font-size: 16px;
+                padding: 0 18px;
+                color:  #000;
+                text-decoration: none;
+                box-shadow: inset $ThemeColor 0 0 0 0;
+                transition: color 0.21s, box-shadow 0.21s;
+                &:hover {
+                    color: $ThemeColor;
+                    box-shadow: inset $ThemeColor 0 -3px 0 0;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .site-title {
+        @media (max-width: 680px) {
+            padding: 0;
+            margin-top: 2px;
+        }
+        float: left;
+        font-size: 22px;
+        font-weight: bold;
+        padding-left: 16px;
+        padding-right: 24px;
+        a {
+            color: #000;
+            text-decoration: none;
+            transition: color 0.21s, opacity 0.21s;
+            &:hover {
+                color: $ThemeColor;
+                text-decoration: none;
+            }
+        }
+    }
+    .rss {
+        float: right;
+        @extend %header-icon;
+        @media (max-width: 680px) {
+            display: none;
+        }
+    }
+    .mobile-menu {
+        @media (min-width: 681px) {
+            display: none;
+        }
+        float: left;
+        @extend %header-icon;
+    }
+}

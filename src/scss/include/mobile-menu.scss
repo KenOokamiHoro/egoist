@@ -1,0 +1,35 @@
+nav.mobile-menu {
+    height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 7px 3px;
+    position: fixed;
+    left: -220px;
+    top: 0;
+    width: 220px;
+    z-index: 2002;
+    background: #fff;
+    transition: transform 0.23s;
+    transform: translate3D(0, 0, 0);
+    overflow-y: auto;
+    ul {
+        padding: 0;
+        margin: 0;
+        li a {
+            color: #585858;
+            padding: 13px 12px;
+            display:  block;
+            // border-bottom: #e2e2e2 1px solid;
+            i {
+                padding-right: 10px;
+            }
+            &:hover {
+                text-decoration: none;
+                background: #8f8f8f;
+                color: #fff;
+            }
+        }
+    }
+    &.active {
+        box-shadow: rgba(0, 0, 0, 0.22) 0px 0px 7px 3px;
+        transform: translate3D(220px, 0, 0);
+    }
+}
