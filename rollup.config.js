@@ -9,7 +9,7 @@ const isDist = process.env.BUILD === 'production';
 const buildPlan = {
     input: 'source/js/index.js',
     output: {
-        file: 'static/bundle.js',
+        file: 'dist/bundle.js',
         format: 'iife',
         sourcemap: !isDist,
     },
