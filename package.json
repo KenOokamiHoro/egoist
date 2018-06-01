@@ -2,7 +2,11 @@
   "name": "egoist",
   "version": "1.0.0",
   "description": "A general personal blog theme",
-  "main": "index.js",
+  "scripts": {
+    "build-test": "rollup -c",
+    "build": "rollup -c --environment BUILD:production",
+    "clean": "rm -rf static/*"
+  },
   "repository": "https://tcdw@github.com/tcdw/egoist.git",
   "author": "tcdw <tcdw2011@gmail.com>",
   "license": "MIT",
@@ -17,5 +21,8 @@
     "rollup-plugin-buble": "^0.19.2",
     "rollup-plugin-postcss": "^1.6.2",
     "rollup-plugin-uglify": "^4.0.0"
+  },
+  "dependencies": {
+    "rollup-plugin-progress": "^0.4.0"
   }
 }
