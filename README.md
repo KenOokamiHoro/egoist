@@ -1,4 +1,4 @@
-# Egoist General Personal Blog Theme
+# Egoist Personal Blog Theme
 
 一款彰显自我的个人博客主题
 
