@@ -2,7 +2,7 @@
 
 一款彰显自我的个人博客主题
 
-![预览画面](https://i.loli.net/2018/06/01/5b114687bfb82.png)
+![预览画面](https://i.loli.net/2018/06/02/5b1254453e35f.png)
 
 ## 编译 SCSS 与 JavaScript
 
