@@ -29,7 +29,9 @@ yarn run clean
 
 ## 适配完成的版本
 
-如果你将本主题适配到了不同的博客平台并在 GitHub 上发布，可以向我提交 Pull Request，将你的项目地址添加到这里。
+如果你将本主题适配到了不同的博客平台并在 GitHub 上发布，可以向我提交 Pull Request，将你的项目地址按格式添加到这里。
+
+* [SilverBlog](https://github.com/SilverBlogTheme/egoist) by tcdw
 
 ## 许可证
 
